@@ -59,6 +59,11 @@
 .header__lang-link {
   text-decoration: none;
   color: #FFFFFF;
+  transition: .2s ease .2s;
+}
+
+.header__lang-link:hover {
+  opacity: 60%;
 }
 
 .header__lang-link_ru {
@@ -96,10 +101,17 @@
 
 .lead__image {
   max-width: 984px;
-  /*max-width: calc(928px + (984–928) * ((100vw — 1280px) / (1280–1024)));*/
+  /*max-width: calc(928px + (984–928) * ((100vw — 1024px) / (1280–1024)));*/
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (max-width:1024px) {
+  .lead__image {
+    max-width: 928px;
+  }
+}
+
 
 .lead__caption {
   font-weight: 400;
@@ -143,8 +155,6 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
-  /*list-style-type: none;
-  margin: 0;*/
   max-width: 690px;
   display: inline-block;
   width: 100%;
@@ -180,6 +190,14 @@
   padding: 92px 0;
 }
 
+@media screen and (max-width:1024px) {
+  .photo-grid__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 14px;
+  }
+}
+
 .photo-grid__item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -199,6 +217,18 @@
   width: calc(100% - 100px*2);
 }
 
+@media screen and (max-width:1205px) {
+  .places {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .places {
+    width: 100%;
+  }
+}
+
 .place {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -209,8 +239,8 @@
   display: grid;
   /*grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);*/
   /*grid-template-columns: fit-content(calc(440px + (460 – 440) * ((100vw — 1280px) / (1280 – 1024)))) */
-  grid-template-columns: minmax(min-content, 460px) fit-content(calc(456px + (484 – 456) * ((100vw — 1280px) / (1280 – 1024))));
-
+  grid-template-columns: minmax(min-content, 460px) fit-content(484px);
+  /*grid-template-columns: minmax(min-content, 460px) calc(456px + (484 – 456) * ((100vw — 1024px) / (1280 – 1024))));*/
   /*grid-template-rows: repeat(3, 1fr);*/
   /*grid-template-columns:  minmax(1fr, max-content)  minmax(min-content, max-content);*/
 /*  grid-template-columns: 440px 1fr; */
@@ -221,6 +251,14 @@
     "image text";
     padding-bottom: 80px;
 }
+
+@media screen and (max-width:1024px) {
+  .place {
+    grid-template-columns: minmax(min-content, 440px) fit-content(456px);
+    grid-gap: 48px 32px;
+  }
+}
+
 
 .place:nth-child(5) {
   padding-bottom: 92px;
@@ -270,7 +308,13 @@
   font-size: 18px;
   line-height: 1.2;
   color: #FFFFFF;
+  transition: .2s ease .2s;
 }
+
+.website__link:hover {
+  opacity: 60%;
+}
+
 
 .website__url-heading {
   margin: 0;
@@ -282,36 +326,6 @@
   text-transform: uppercase;
   color: #AAAAAA;
 }
-
-#2A2C2F;
-opacity: 0.3;
-
-/*.container {
-    background-color: red;
-    width: 500px;
-    height: 500px;
-    position: relative;
-}
-.content {
-    background-color: blue;
-    width: 250px;
-    position: relative;
-}
-.container::before {
-    content:"";
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    opacity: 0;
-}
-
-.container:hover::before {
-  opacity: 1;
-}*/
 
 .cover {
   margin: 0 auto;
@@ -328,7 +342,10 @@ opacity: 0.3;
   background-size: 100%;
   background-repeat: no-repeat;
   /*width: 1184px;*/
-  width: calc(1024px + (1184–1024) * ((100vw — 1280px) / (1280–1024)));
+  /*width: calc(1184px + 160)*(100vw - 1024px)/(1280 - 1024);*/
+  /*width: calc(1184px + 10)*(100vw - 1024px)/(1280 - 1024);*/
+  width: calc(1024px + (1184 – 1024)*((100vw — 1024px)/(1280 – 1024)));
+  /*height: calc(100% / 1.6);*/
   min-height: 740px;
   display: flex;
   flex-direction: column;
@@ -349,6 +366,7 @@ opacity: 0.3;
   opacity: .3;
   transition: opacity .7s ease;
 }
+
 .cover__overlay:hover::before {
   opacity: .8;
 }
@@ -356,7 +374,11 @@ opacity: 0.3;
 .cover__link {
   text-decoration: none;
   color: #FFFFFF;
+  transition: .2s ease .2s;
+}
 
+.cover__link:hover {
+  opacity: 60%;
 }
 
 .cover__title {
@@ -403,6 +425,10 @@ opacity: 0.3;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
+  transition: .2s ease .2s;
+}
+.footer__link:hover {
+  opacity: 60%;
 }
 
 .footer__copyright {
