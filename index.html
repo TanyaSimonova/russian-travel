@@ -16,15 +16,15 @@
       <header class="header section">
         <img class="header__logo" src="./images/header-logo.svg" alt="">
         <ul class="header__links list">
-          <li><a class="header__lang-link header__lang-link_ru">Ru</a></li>
-          <li><a class="header__lang-link header__lang-link_en">En</a></li>
+          <li><a class="header__lang-link header__lang-link_ru" href="#" target="_blank">Ru</a></li>
+          <li><a class="header__lang-link header__lang-link_en" href="#" target="_blank">En</a></li>
         </ul>
       </header>
       <main class="content section">
         <section class="lead section">
           <h1 class="lead__title section">Путешествия по России</h1>
-            <p class="lead__subtitle section">Настоящая страна не в выпусках 
-                    новостей, а здесь.</p>
+            <p class="lead__subtitle section">Настоящая&nbsp;страна&nbsp;не&nbsp;в&nbsp;выпусках 
+                    новостей,&nbsp;а здесь.</p>
             <img class="lead__image" src="./images/lead-polka.jpg">
             <p class="lead__caption">ваша полка — верхняя</p>
         </section>
@@ -47,18 +47,20 @@
           </ul>
         </section>
         <section class="photo-grid">
-          <figure class="photo-grid__item"><img src="./images/photo-grid-train.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-atharva-tulsi.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-tuman.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-sochi.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-arisa.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-baikal.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-elbrus.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-kondratiev.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-kamchatka-1.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-kamchatka-2.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-baikal-2.jpg" class="photo-grid__image"></figure>
-          <figure class="photo-grid__item"><img src="./images/photo-grid-ergaki.jpg" class="photo-grid__image"></figure>
+          <ul class="photo-grid__items list">
+            <li class="photo-grid__item"><img src="./images/photo-grid-train.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-atharva-tulsi.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-tuman.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-sochi.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-arisa.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-baikal.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-elbrus.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-kondratiev.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-kamchatka-1.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-kamchatka-2.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-baikal-2.jpg" class="photo-grid__image"></li>
+            <li class="photo-grid__item"><img src="./images/photo-grid-ergaki.jpg" class="photo-grid__image"></li>
+          </ul>
         </section>
         <section class="places section">
           <ul class="list">
@@ -145,11 +147,23 @@
           </ul>
         </section>
         <section class="cover">
-          <h2 class="cover__title"></h2>
-          <p class="cover__subtitle"></p>
+          <div class="cover__overlay">
+            <h2 class="cover__title"><a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link">До Байкала «на&nbsp;собаках»</a></h2>
+            <p class="cover__subtitle">По мотивам учебной темы о Транссибе —&nbsp;путешествие от столицы до Байкала на&nbsp;электричках.</p>
+          </div>
         </section>
       </main>
-      <footer>
+      <footer class="footer">
+        <nav>
+          <ul class="footer__links list">
+            <li ><a class="footer__link" href="https://yandex.ru/maps" >Карты</a></li>
+            <li ><a class="footer__link" href="https://yandex.ru/pogoda" >Погода</a></li>
+            <li ><a class="footer__link" href="https://rasp.yandex.ru" >Расписание</a></li>
+            <li ><a class="footer__link" href="https://calendar.yandex.ru" >Календарь</a></li>
+            <li ><a class="footer__link" href="https://travel.yandex.ru">Путешествия</a></li>
+          </ul>
+        </nav>
+        <p class="footer__copyright">&copy;&nbsp;2023. Таня Симонова</p>
       </footer>
     </div>   
   </div>
