@@ -1,0 +1,9 @@
+.cover__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: .2s ease .2s;
+  }
+  
+  .cover__link:hover {
+    opacity: 60%;
+  }

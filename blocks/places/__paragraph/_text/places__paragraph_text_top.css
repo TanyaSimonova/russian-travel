@@ -1,0 +1,9 @@
+.places__paragraph_text_top {
+    padding-bottom: 26px;
+  }
+  
+  @media screen and (max-width: 955px) {
+    .places__paragraph_text_top {
+      padding-bottom: 25px;
+    }
+  }

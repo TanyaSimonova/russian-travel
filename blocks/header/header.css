@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 28px;
+    background-color: var(--main-background-color);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header {
+      padding-top: 16px;
+    } 
+  }

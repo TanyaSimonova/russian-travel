@@ -1,0 +1,28 @@
+.places__title {
+    grid-area: title;
+    margin: 0;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.06;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .places__title  {
+      font-size: calc(42px + 30*(100vw - 768px)/(1024 - 768));
+      line-height: calc(46px + 30*(100vw - 768px)/(1024 - 768));
+      padding-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .places__title  {
+      font-size: calc(32px + 10*(100vw - 320px)/(768 - 320));
+      line-height: calc(35px + 11*(100vw - 320px)/(768 - 320));
+    }  
+  }
+  
+  @media screen and (max-width:600px) {
+    .places__title  {
+      padding: 0 16px 0;
+    }
+  }
