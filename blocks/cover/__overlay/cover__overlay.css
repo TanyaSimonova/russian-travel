@@ -6,13 +6,13 @@
   background-repeat: no-repeat;
   width: calc(1024px + 160*(100vw - 1024px)/(1280 - 1024));
   max-width: 1184px;
-  height: calc(100vw/1.6) ;
+  height: calc(100vw/1.6);
   max-height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
   text-decoration: none;
   color: #FFFFFF;
 }
