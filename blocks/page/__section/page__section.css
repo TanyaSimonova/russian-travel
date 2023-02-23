@@ -1,0 +1,19 @@
+.page__section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+  
+@media screen and (max-width: 955px) {
+  .page__section  {
+    padding: 0 24px;
+  } 
+}
+  
+@media screen and (max-width: 600px) {
+  .page__section  {
+    padding: 0 16px;
+  } 
+}

@@ -10,7 +10,7 @@
     .places__title  {
       font-size: calc(42px + 30*(100vw - 768px)/(1024 - 768));
       line-height: calc(46px + 30*(100vw - 768px)/(1024 - 768));
-      padding-right: 20px;
+      max-width: 97%;
     }
   }
   

@@ -6,12 +6,15 @@
   background-repeat: no-repeat;
   width: calc(1024px + 160*(100vw - 1024px)/(1280 - 1024));
   max-width: 1184px;
-  min-height: 740px;
+  height: calc(100vw/1.6) ;
+  max-height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative; 
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .cover__overlay::before {
@@ -31,76 +34,12 @@
   opacity: .8;
 }
 
-@media screen and (max-width:1150px) {
-  .cover__overlay {
-    min-height: calc(1102.75px / 1.6);
-  }
+.cover__overlay:hover {
+  opacity: 60%;
 }
-  
-@media screen and (max-width:1080px) {
-  .cover__overlay {
-      min-height: calc(1059px / 1.6);
-  }
-}
-  
+
 @media screen and (max-width:1024px) {
   .cover__overlay {
     width: calc(768px + 256*(100vw - 768px)/(1024 - 768));
-    min-height: calc(1024px/ 1.6);
   }
 }
-  
-@media screen and (max-width:955px) {
-  .cover__overlay {
-    min-height: calc(955px / 1.6);
-  }
-}
-  
-@media screen and (max-width:880px) {
-  .cover__overlay {
-    min-height: calc(880px / 1.6);
-  }
-}
-  
-@media screen and (max-width:840px) {
-  .cover__overlay {
-    min-height: calc(840px / 1.6);
-  }
-}
-  
-@media screen and (max-width:768px) {
-  .cover__overlay {
-    min-height: calc(768px / 1.6);
-  }
-}
-
-@media screen and (max-width:700px) {
-  .cover__overlay {
-    min-height: calc(700px / 1.6);
-  }
-}
-  
-@media screen and (max-width:600px) {
-  .cover__overlay {
-    min-height: calc(600px / 1.6);
-  }
-}
-  
-@media screen and (max-width:500px) {
-  .cover__overlay {
-    min-height: calc(500px / 1.6);
-  }
-}
-  
-@media screen and (max-width:400px) {
-  .cover__overlay {
-    min-height: calc(400px / 1.6);
-  }
-}
-  
-@media screen and (max-width:320px) {
-  .cover__overlay {
-    min-height: calc(320px / 1.6);
-  }
-}
-  
